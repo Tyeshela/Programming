@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Background Color on Button Click</title>
+</head>
+<body>
+  <button id="colorButton">Change Color</button>
+  <div id="contentArea" style="width: 200px; height: 200px;"></div>
+
+  <script>
+    // Get references to the button and content area
+    const colorButton = document.getElementById("colorButton");
+    const contentArea = document.getElementById("contentArea");
+
+    // Define an array of background colors to cycle through
+    const colors = ["red", "blue", "green", "yellow"];
+    let currentColorIndex = 0;
+
+    // Add a click event listener to the button
+    colorButton.addEventListener("click", () => {
+      // Change the background color to the next color in the array
+      contentArea.style.backgroundColor = colors[currentColorIndex];
+      
+      // Increment the color index or reset it to 0 when reaching the end of the array
+      currentColorIndex = (currentColorIndex + 1) % colors.length;
+    });
+  </script>
+</body>
+</html>

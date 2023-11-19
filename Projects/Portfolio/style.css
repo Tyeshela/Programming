@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Courier New', monospace;
+    color: #0F0;
+    overflow: auto;
+  }
+  
+  canvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
+  
+  .portfolio-content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.671);
+    color: #0F0;
+    font-family: 'Courier New', monospace;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Style for the header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the image */
+  .profile-image {
+    max-width: 140px; /* Adjust the width as needed */
+    border-radius: 50%; /* Makes the image circular */
+    border: 2px solid #0F0; /* Adds a green border around the image */
+    position: absolute;
+    top: 25px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+    
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #0F0;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #0F0;
+  }
+  
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    color: #0F0;
+  }
+  
+  hr {
+    border-color: #0F0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #0F0;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #0F0;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .progress-bar-container {
+    height: 20px;
+    width: 100%;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    line-height: 20px;
+    background-color: #4CAF50;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .beginner .progress-bar {
+    width: 30%;
+    background-color: #ffc107;
+  }
+  
+  .intermediate .progress-bar {
+    width: 60%;
+    background-color: #2196f3;
+  }
+  
+  .advanced .progress-bar {
+    width: 90%;
+    background-color: #4CAF50;
+  }
+  
+  footer {
+    background-color: rgba(0, 0, 0, 0.671);
+    color: #0F0;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer a {
+    color: #0F0;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  footer a:hover {
+    color: #4CAF50;
+  }
+
+  .hhh333 {
+    margin-top: 37px;
+  }

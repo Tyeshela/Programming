@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Capturing Example</title>
+</head>
+<body>
+    <div id="outerDiv">
+        Outer Div
+        <div id="innerDiv">
+            Inner Div
+        </div>
+    </div>
+
+    <script>
+        const outerDiv = document.getElementById('outerDiv');
+        const innerDiv = document.getElementById('innerDiv');
+
+        outerDiv.addEventListener('click', () => {
+            console.log('Outer Div Capturing');
+        }, true);
+
+        innerDiv.addEventListener('click', () => {
+            console.log('Inner Div Capturing');
+        }, true);
+    </script>
+</body>
+</html>
